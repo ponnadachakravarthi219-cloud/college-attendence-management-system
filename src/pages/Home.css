@@ -1,0 +1,25 @@
+.home{
+    text-align:center;
+    padding:40px;
+}
+
+.home h1{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.home-cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}

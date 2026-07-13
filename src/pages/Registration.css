@@ -1,0 +1,146 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+}
+
+.registration-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.registration-card{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.registration-card h2{
+    text-align:center;
+    color:#333;
+    margin-bottom:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:15px;
+}
+
+.form-group label{
+    font-weight:bold;
+    margin-bottom:5px;
+    color:#444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    outline:none;
+    border-color:#007bff;
+    box-shadow:0 0 5px rgba(0,123,255,.3);
+}
+
+.form-group textarea{
+    resize:none;
+}
+
+.button-group{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.button-group button{
+    width:48%;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    color:white;
+}
+
+.button-group button:first-child{
+    background:#28a745;
+}
+
+.button-group button:first-child:hover{
+    background:#218838;
+}
+
+.reset-btn{
+    background:#dc3545;
+}
+
+.reset-btn:hover{
+    background:#c82333;
+}
+
+.error{
+    color:red;
+    font-size:14px;
+    margin-top:5px;
+}
+
+.success{
+    color:green;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.submitted-data{
+    margin-top:30px;
+    background:#f8f9fa;
+    padding:20px;
+    border-radius:10px;
+    border-left:5px solid #28a745;
+}
+
+.submitted-data h3{
+    margin-top:0;
+    color:#28a745;
+}
+
+.submitted-data p{
+    margin:8px 0;
+}
+
+small{
+    color:#666;
+    margin-top:5px;
+}
+
+@media(max-width:768px){
+
+.registration-card{
+    padding:20px;
+}
+
+.button-group{
+    flex-direction:column;
+}
+
+.button-group button{
+    width:100%;
+    margin-bottom:10px;
+}
+
+}
